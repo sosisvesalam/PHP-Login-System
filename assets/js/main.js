@@ -40,16 +40,16 @@ $(document)
 		if(data.redirect !== undefined){
 			window.location = data.redirect;
 		} else if(data.error !== undefined) {
-			alert('test');
+			// alert('test');
 			_error
 				.text(data.error)
 				.show();
 		}
 
-		
+
 	})
 	.fail(function axajFailed(e){
-		// console.log(e);
+		console.log(e);
 	})
 	.always(function ajaxAlwaysDoThis(dataObj){
 		console.log(data.error);
