@@ -24,7 +24,7 @@ $(document)
 
 		return false;
 	}
-	
+
 	// Assuming the code gets this far, we can start the ajax process
 	_error.hide();
 
@@ -36,21 +36,23 @@ $(document)
 		aync: true
 	})
 	.done(function ajaxDone(data){
-		console.log(data);
+		// console.log(data);
 		if(data.redirect !== undefined){
 			window.location = data.redirect;
+		} else if(data.error !== undefined) {
+			alert('test');
+			_error
+				.text(data.error)
+				.show();
 		}
+
 		
-		alert(data.name);
 	})
 	.fail(function axajFailed(e){
-		console.log(e);
+		// console.log(e);
 	})
 	.always(function ajaxAlwaysDoThis(dataObj){
-		console.log('Always');
+		console.log(data.error);
 	})
-
-
-
 	return false;
 })
