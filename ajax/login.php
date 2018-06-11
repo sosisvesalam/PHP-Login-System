@@ -37,7 +37,7 @@
 				$return['error'] = 'Invalid user email/password combo';
 			}
 
-			$return['error'] = "You already have an account";
+			// $return['error'] = "You already have an account";
 		} else {
 			// They need to create a new account
 			$return['error'] = "you do not have an account. <a href='register.php'>Create one now?</a>";
