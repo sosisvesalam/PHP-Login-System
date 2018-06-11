@@ -6,6 +6,11 @@
 
 	// Our config is bellow
 
+	// Sessions are always turned on
+	if(!isset($_SESSION)) {
+		session_start();
+	}
+
 	// Allow errors
 	error_reporting(-1);
 	ini_set('display_errors', 'On');
