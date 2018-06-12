@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 //allow the config
 define('__CONFIG__', true);
@@ -17,14 +17,14 @@ require_once 'inc/config.php';
 <body>
 
 	<div class="uk-section uk-container">
-		<?php 
+		<?php
 			echo "Hello World, Today is: ";
 			echo date (" Y m d");
 		?>
 	</div>
 	<p>
 		<a href="login.php">Login</a>
-		<a href="/register.php">Register</a>
+		<a href="register.php">Register</a>
 	</p>
 	<?php require_once 'inc/footer.php'?>
 
