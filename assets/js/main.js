@@ -51,7 +51,7 @@ $(document)
 	.fail(function axajFailed(e){
 		console.log(e);
 	})
-	.always(function ajaxAlwaysDoThis(dataObj){
+	.always(function ajaxAlwaysDoThis(data){
 		console.log(data.error);
 	})
 	return false;
